@@ -1,6 +1,6 @@
 import stadiumImage from '../assets/stadium_empty.svg';
 import styles from './CalculatorLottie.module.css';
-import Calculator from './Calculator';
+import Calculator from '../components/Calculator';
 
 function CalculatorLottie() {
   return (
@@ -11,8 +11,11 @@ function CalculatorLottie() {
 
         </div>
         <div classList={{ [styles.column]: true, [styles.right]: true }}>
+          <div class={styles.content}>
 
-          Hi
+
+            <span class={styles.legend}>*This is just a graphic representation of aproximate results</span>
+          </div>
         </div>
       </div>
     </div>

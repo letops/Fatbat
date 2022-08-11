@@ -1,8 +1,7 @@
 import styles from './App.module.css';
-import Calculator from './components/Calculator';
-import CalculatorImage from './components/CalculatorImage';
-import CalculatorLonely from './components/CalculatorLonely';
-import CalculatorLottie from './components/CalculatorLottie';
+import CalculatorImage from './variants/CalculatorImage';
+import CalculatorLonely from './variants/CalculatorLonely';
+import CalculatorLottie from './variants/CalculatorLottie';
 
 function App() {
   return (

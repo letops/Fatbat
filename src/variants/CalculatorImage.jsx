@@ -1,6 +1,6 @@
 import stadiumImage from '../assets/stadium_empty.svg';
 import styles from './CalculatorImage.module.css';
-import Calculator from './Calculator';
+import Calculator from '../components/Calculator';
 
 function CalculatorImage() {
   return (
@@ -11,7 +11,10 @@ function CalculatorImage() {
 
         </div>
         <div classList={{ [styles.column]: true, [styles.right]: true }}>
-          <img src={stadiumImage} />
+          <div class={styles.content}>
+            <img src={stadiumImage} />
+            <span class={styles.legend}>*This is just a graphic representation of aproximate results</span>
+          </div>
         </div>
       </div>
     </div>

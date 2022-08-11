@@ -1,6 +1,7 @@
 import stadiumImage from '../assets/stadium_empty.svg';
 import styles from './CalculatorLonely.module.css';
-import Calculator from './Calculator';
+import Calculator from '../components/Calculator';
+
 
 function CalculatorLonely() {
   return (

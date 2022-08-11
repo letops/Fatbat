@@ -1,0 +1,45 @@
+.CalculatorImage .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.CalculatorImage .row.center {
+  justify-content: center;
+}
+
+.CalculatorImage .column {
+  box-sizing: border-box;
+  width: 45%;
+}
+
+.CalculatorImage .column.right {
+  align-self: stretch;
+}
+
+
+.CalculatorImage .content {
+  display: block;
+  position: sticky;
+	top: calc(115px + 24px);
+}
+
+.CalculatorImage .content img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.CalculatorImage .content .legend {
+  display: block;
+  margin: 16px 0;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #42526e;
+}
