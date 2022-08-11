@@ -1,39 +1,17 @@
-import logo from './logo.svg';
 import styles from './App.module.css';
 import Calculator from './components/Calculator';
+import CalculatorImage from './components/CalculatorImage';
+import CalculatorLonely from './components/CalculatorLonely';
+import CalculatorLottie from './components/CalculatorLottie';
 
 function App() {
   return (
     <div class={styles.App}>
-      <div class={styles.row}>
-        <div class={styles.column}>
-          <Calculator />
-
-        </div>
-        <div class={styles.column}>
-
-        </div>
-      </div>
-
+      <CalculatorImage />
       <hr />
-
-      <div class={styles.row}>
-        <div class={styles.column}>
-          <Calculator />
-
-        </div>
-        <div class={styles.column}>
-
-        </div>
-      </div>
-
+      <CalculatorLottie />
       <hr />
-
-      <div classList={{[styles.row]: true, [styles.center]: true }}>
-        <div class={styles.column}>
-          <Calculator />
-        </div>
-      </div>
+      <CalculatorLonely />
     </div>
   );
 }
