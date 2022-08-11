@@ -1,0 +1,17 @@
+.Select {
+  appearance: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: solid 1px #232323;
+  background-color: white;
+  background-position: calc(100% - 10px) center;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  outline: 0;
+  width: 100%;
+}
+
+.Select:focus {
+  outline: none;
+}
