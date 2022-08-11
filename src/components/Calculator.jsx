@@ -29,35 +29,46 @@ function Calculator() {
         <Collapsable title='Your training regime'>
           <div class={styles.row}>
             <span>Training Time (daily)</span>
-            <span>30 min</span>
+            <span><strong>30 min</strong></span>
           </div>
+          <hr />
           <div class={styles.row}>
-            <span>Training Time (daily)</span>
-            <span>30 min</span>
+            <span>Batting Drills (no ball)</span>
+            <span><strong>40 reps</strong></span>
           </div>
+          <hr />
           <div class={styles.row}>
-            <span>Training Time (daily)</span>
-            <span>30 min</span>
+            <span>Batting Drills (with ball)</span>
+            <span><strong>60 reps</strong></span>
           </div>
         </Collapsable>
       </Show>
 
       <h2>Select the number of weeks you would  like to train</h2>
-      <Select />
+      <div class={styles.row}>
+        <Select />
+      </div>
 
-      <Show when={calculation.weeks}>
+      <Show when={calculation.weeks && calculation.weeks !== '0'}>
         <Collapsable title='Training expected results'>
           <div class={styles.row}>
-            <span>Training Time (daily)</span>
-            <span>30 min</span>
+            <span>Bating average</span>
+            <span><strong>15%</strong></span>
           </div>
+          <hr />
           <div class={styles.row}>
-            <span>Training Time (daily)</span>
-            <span>30 min</span>
+            <span>Exit Speed</span>
+            <span><strong>20%</strong></span>
           </div>
+          <hr />
           <div class={styles.row}>
-            <span>Training Time (daily)</span>
-            <span>30 min</span>
+            <span>Confidence</span>
+            <span><strong>30%</strong></span>
+          </div>
+          <hr />
+          <div class={styles.row}>
+            <span>Grip Strenght</span>
+            <span><strong>25%</strong></span>
           </div>
         </Collapsable>
       </Show>

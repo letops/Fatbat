@@ -1,0 +1,25 @@
+.CalculatorImage .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.CalculatorImage img {
+  max-width: 100%;
+}
+
+.CalculatorImage .row.center {
+  justify-content: center;
+}
+
+.CalculatorImage .column {
+  box-sizing: border-box;
+  width: 45%;
+}
+
+.CalculatorImage .column.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
