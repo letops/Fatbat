@@ -1,0 +1,49 @@
+.Collapsable {
+  background-color:#f4f5f7;
+  margin-top: 24px;
+  padding: 24px 24px 0;
+}
+
+.Collapsable .header {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Collapsable .header .title {
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #232323;
+  margin: 0;
+}
+
+.Collapsable .header .icon {
+  transform: rotate(180deg);
+
+}
+
+.Collapsable .content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 24px;
+  max-height: 0;
+  overflow: hidden;
+}
+
+
+.Collapsable.open .header .icon {
+  transform: rotate(0deg);
+}
+
+.Collapsable.open .content {
+  max-height: 100vh;
+  padding-bottom: 24px;
+}
+
