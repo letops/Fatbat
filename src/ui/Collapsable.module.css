@@ -31,12 +31,16 @@
 .Collapsable .content {
   display: flex;
   flex-direction: column;
+  color: #232323;
   gap: 24px;
   padding-top: 24px;
   max-height: 0;
   overflow: hidden;
 }
 
+.Collapsable .content hr {
+  margin: 0;
+}
 
 .Collapsable.open .header .icon {
   transform: rotate(0deg);

@@ -10,9 +10,7 @@ function Button({ key, children }) {
         [styles.Button]: true,
         [styles.selected]: calculation.commitment === key
       }}
-      onClick={(e) => {
-        changeCommitment(key);
-      }}
+      onClick={(e) => { changeCommitment(key); }}
     >
       {children}
     </button>

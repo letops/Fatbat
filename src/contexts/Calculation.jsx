@@ -3,7 +3,7 @@ import { createStore } from "solid-js/store";
 
 const defaultState = {
   commitment: '',
-  weeks: '',
+  weeks: '0',
 };
 
 const CalculationContext = createContext([
@@ -21,7 +21,12 @@ export const CalculationProvider = (props) => {
     weeks: props.weeks ?? defaultState.weeks,
   });
 
-  const changeCommitment = (commitment) => setState("commitment", commitment);
+  const changeCommitment = (commitment) => {
+    if (commitment !== state.commitment) {
+      setState("commitment", commitment);
+      setState("weeks", '0');
+    }
+  }
   const changeWeeks = (weeks) => setState("weeks", weeks);
 
   return (
