@@ -1,3 +1,5 @@
+/** global ChevronIcon:false */
+
 import styles from './Select.module.css';
 import ChevronIcon from '../assets/chevron-down.svg'
 import { useCalculation } from "../contexts/Calculation";
@@ -8,14 +10,12 @@ function Select({ options }) {
 
   function model(el, value) {
     const [field, name, setField] = value();
-    console.log({ field, setField, el, value })
     createRenderEffect(() => {
       el.value = field[name];
     });
     el.addEventListener("input", (e) => setField(e.target.value));
   }
 
-  console.log(ChevronIcon);
 
   return (
     <select
@@ -24,11 +24,12 @@ function Select({ options }) {
       style={{ "background-image": `url("${ChevronIcon}")` }}
       use:model={[calculation, 'weeks', changeWeeks]}
     >
-      <option value="0" disabled>Select an option</option>
-      <option value="1">Volvo</option>
-      <option value="2">Saab</option>
-      <option value="3">Mercedes</option>
-      <option value="4">Audi</option>
+      <option value="0" disabled>Select an option...</option>
+      <option value="2">2 weeks</option>
+      <option value="4">4 weeks</option>
+      <option value="6">6 weeks</option>
+      <option value="8">8 weeks</option>
+      <option value="10">10 weeks</option>
     </select>
   );
 }
