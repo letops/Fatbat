@@ -1,0 +1,8 @@
+<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <mask id="wddmvzahha" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="5" y="8" width="14" height="9">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.293 8.793a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1-1.414 1.414L12 10.914l-5.293 5.293a1 1 0 0 1-1.414-1.414l6-6z" fill="#061938"/>
+    </mask>
+    <g mask="url(#wddmvzahha)">
+        <path fill="#061938" d="M0 .5h24v24H0z"/>
+    </g>
+</svg>
