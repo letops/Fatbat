@@ -29,17 +29,17 @@ function Calculator() {
         <Collapsable title='Your training regime'>
           <div class={styles.row}>
             <span>Training Time (daily)</span>
-            <span><strong>30 min</strong></span>
+            <span><strong>{calculation.training[calculation.commitment].time} min</strong></span>
           </div>
           <hr />
           <div class={styles.row}>
             <span>Batting Drills (no ball)</span>
-            <span><strong>40 reps</strong></span>
+            <span><strong>{calculation.training[calculation.commitment].withoutBall} reps</strong></span>
           </div>
           <hr />
           <div class={styles.row}>
             <span>Batting Drills (with ball)</span>
-            <span><strong>60 reps</strong></span>
+            <span><strong>{calculation.training[calculation.commitment].withBall} reps</strong></span>
           </div>
         </Collapsable>
       </Show>
@@ -53,22 +53,22 @@ function Calculator() {
         <Collapsable title='Training expected results'>
           <div class={styles.row}>
             <span>Bating average</span>
-            <span><strong>15%</strong></span>
+            <span><strong>{calculation.improvement.avg.toFixed(2)}%</strong></span>
           </div>
           <hr />
           <div class={styles.row}>
             <span>Exit Speed</span>
-            <span><strong>20%</strong></span>
+            <span><strong>{calculation.improvement.speed.toFixed(2)}%</strong></span>
           </div>
           <hr />
           <div class={styles.row}>
             <span>Confidence</span>
-            <span><strong>30%</strong></span>
+            <span><strong>{calculation.improvement.confidence.toFixed(2)}%</strong></span>
           </div>
           <hr />
           <div class={styles.row}>
             <span>Grip Strenght</span>
-            <span><strong>25%</strong></span>
+            <span><strong>{calculation.improvement.strength.toFixed(2)}%</strong></span>
           </div>
         </Collapsable>
       </Show>
