@@ -1,6 +1,6 @@
 import { Show } from "solid-js";
 import { createSignal } from "solid-js";
-import { CalculationProvider, useCalculation } from "../contexts/Calculation";
+import { useCalculation } from "../contexts/Calculation";
 
 import Button from '../ui/Button';
 import Collapsable from "../ui/Collapsable";
@@ -76,12 +76,4 @@ function Calculator() {
   );
 }
 
-function CalculatorWrap () {
-  return (
-    <CalculationProvider>
-      <Calculator />
-    </CalculationProvider>
-  )
-}
-
-export default CalculatorWrap;
+export default Calculator;

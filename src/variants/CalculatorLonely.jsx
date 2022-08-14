@@ -1,6 +1,7 @@
 import stadiumImage from '../assets/stadium_empty.svg';
 import styles from './CalculatorLonely.module.css';
 import Calculator from '../components/Calculator';
+import { CalculationProvider, useCalculation } from "../contexts/Calculation";
 
 
 function CalculatorLonely() {
@@ -15,4 +16,13 @@ function CalculatorLonely() {
   );
 }
 
-export default CalculatorLonely;
+
+function CalculatorLonelyWrap () {
+  return (
+    <CalculationProvider>
+      <CalculatorLonely />
+    </CalculationProvider>
+  )
+}
+
+export default CalculatorLonelyWrap;

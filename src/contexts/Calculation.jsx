@@ -48,7 +48,12 @@ export const CalculationProvider = (props) => {
     commitment: props.commitment ?? defaultState.commitment,
     weeks: props.weeks ?? defaultState.weeks,
     training,
-    improvement: { ...improvementBase },
+    improvement: {
+      avg: 0,
+      speed: 0,
+      confidence: 0,
+      strength: 0,
+     },
   });
 
   const calculateResults = (commitment, weeksStr) => {
@@ -57,7 +62,7 @@ export const CalculationProvider = (props) => {
     const weeks = parseInt(weeksStr);
 
     if (weeks) {
-      const weeksMultiplier = weeks * 0.25;
+      const weeksMultiplier = weeks * 0.2;
       setState("improvement", {
         avg: avg * (multiplier + weeksMultiplier),
         speed: speed * (multiplier + weeksMultiplier),

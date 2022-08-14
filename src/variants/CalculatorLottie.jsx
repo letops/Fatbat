@@ -1,6 +1,8 @@
 import stadiumImage from '../assets/stadium_empty.svg';
 import styles from './CalculatorLottie.module.css';
 import Calculator from '../components/Calculator';
+import { CalculationProvider, useCalculation } from "../contexts/Calculation";
+
 
 function CalculatorLottie() {
   return (
@@ -22,4 +24,13 @@ function CalculatorLottie() {
   );
 }
 
-export default CalculatorLottie;
+
+function CalculatorLottieWrap () {
+  return (
+    <CalculationProvider>
+      <CalculatorLottie />
+    </CalculationProvider>
+  )
+}
+
+export default CalculatorLottieWrap;
